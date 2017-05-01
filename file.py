@@ -36,10 +36,11 @@ def get():
             boxs.append(box)
     A=np.asarray(lists_data.loc[components][boxs].fillna(0))                                            ####A
     #print A,B,components
-    return A,B,boxs
+    return A,B,components,boxs
 
 if __name__ == '__main__':
-    A,B,boxs=get()
+    A,B,components,boxs=get()
     print "matrix:",A
     print "demands:",B
+    print "components", components
     print "candinate boxs:",boxs

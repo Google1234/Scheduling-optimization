@@ -5,7 +5,7 @@ try:
 	import config
 	import optimize
 	rst=optimize.opt()
-	print u'结果：需要调的集装箱'
+	print u'调以下集装箱可以获取除数量不足的零件:'
 	print rst
 except :
     print "Unexpected error:", sys.exc_info()[0]
